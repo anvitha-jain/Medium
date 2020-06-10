@@ -1,12 +1,12 @@
- ============================ ===================================================== 
-           Commands                               Descriptions                      
- ============================ ===================================================== 
-  docker info                  Gives complete information of the docker             
-  docker ps                    Lists running containers                             
-  docker ps -a                 Lists all containers(Running + Exited)               
-  docker images                Lists all images inside docker                       
-  docker rm $(docker ps -aq)   Removes all images at once                           
-  docker system df             gives disk usage by docker                           
-  docker system df -v          gives disk usage + space consumed by each container  
-  docker network ls            to get all available networks                        
- ============================ ===================================================== 
+ =====================================  ===================================================== 
+           Commands                                        Descriptions                      
+ =====================================  ===================================================== 
+  docker info                            Gives complete information of the docker             
+  docker ps                              Lists running containers                             
+  docker ps -a                           Lists all containers(Running + Exited)               
+  docker images                          Lists all images inside docker                       
+  docker rmi -f $(docker images -a -q)   Removes all images at once                           
+  docker system df                       gives disk usage by docker                           
+  docker system df -v                    gives disk usage + space consumed by each container  
+  docker network ls                      to get all available networks                        
+ =====================================  ===================================================== 
